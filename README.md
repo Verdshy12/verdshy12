@@ -47,7 +47,8 @@ Nairobi, Kenya
 
 ### 📫 Contact
 - **Email:** mashmartin214@gmail.com  
-- **GitHub:** [Verdshy12](https://github.com/Verdshy12)
+[View README as CV](https://github.com/Verdshy12/Verdshy12/blob/main/README.md)
+
 
 ---
 
