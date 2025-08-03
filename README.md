@@ -1,5 +1,5 @@
 
-#Hi, I'm Mash Martin!
+Hi, I'm Mash Martin!
 
 Welcome to my GitHub profile!
 
