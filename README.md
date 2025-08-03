@@ -1,4 +1,3 @@
-
 Hi, I'm Mash Martin!
 
 Welcome to my GitHub profile!
@@ -47,8 +46,7 @@ Nairobi, Kenya
 
 ### 📫 Contact
 - **Email:** mashmartin214@gmail.com  
-[View README as CV](https://github.com/Verdshy12/Verdshy12/blob/main/README.md)
-
+- **CV Link:** [GitHub-hosted CV](https://github.com/Verdshy12)
 
 ---
 
