@@ -45,8 +45,10 @@ Nairobi, Kenya
 ---
 
 ### 📫 Contact
-- **Email:** mashmartin214@gmail.com  
-- **CV Link:** [GitHub-hosted CV](https://github.com/Verdshy12)
+- **Email:** mashmartin214@gmail.com
+
+- ### Project link
+- [Live Resume on Github Pages](https://verdshy12.github.io/verdshy12/)
 
 ---
 
