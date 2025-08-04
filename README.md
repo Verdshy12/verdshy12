@@ -1,6 +1,6 @@
 Hi, I'm Mash Martin!
 ---
-On Github [https://verdshy12.github.io/verdshy12/index.html](https://verdshy12.github.io/verdshy12/index.html)
+On Github [https://verdshy12.github.io/verdshy12/](https://verdshy12.github.io/verdshy12/)
 ---
 Welcome to my GitHub profile!
 
