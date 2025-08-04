@@ -1,5 +1,7 @@
 Hi, I'm Mash Martin!
-[Live Resume on Github Pages][https://verdshy12.github.io/verdshy12/](https://verdshy12.github.io/verdshy12/)
+---
+On Github [https://verdshy12.github.io/verdshy12/index.html](https://verdshy12.github.io/verdshy12/index.html)
+---
 Welcome to my GitHub profile!
 
 ---
