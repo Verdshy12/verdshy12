@@ -22,10 +22,16 @@ I'm a **Digital Strategist**, **Social Media Manager**, and **Digital Creator** 
 ### 🎓 Education
 **Technical University of Mombasa**  
 _BSc in Technology – Applied Physics (Electronics & Instrumentation)_  
-January 2021 – April 2025
+January 2021 – April 2026
+
+
+### CERTIFICATIONS
+
+_Python For Data Science -2025_
+
+_Practical Theology - 2024_
 
 ---
-
 ### 💼 Experience
 
 **Raia TV, Mombasa** – Social Media Manager  
