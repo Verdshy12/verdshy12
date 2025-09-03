@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mash Martin | Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #e0e0e0;
+      background-color: #121212;
+      overflow-x: hidden;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #1a1a1a;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: end;
+      align-items: flex-end;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      border-bottom: 1px solid #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      padding: 20px 50px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      background-color: #00ffff;
+      color: white;
+    }
+
+    /* Main content styles */
+    .hero-section {
+      max-width: 1200px;
+      margin: 1rem auto;
+      padding: 30px;
+      display: flex;
+      min-height: 70vh;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .text-content {
+      flex: 1;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .image-content {
+      flex: 1;
+      position: relative;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      background: #2a2a2a;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .main-heading {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .main-heading span {
+      color: #9d50bb;
+    }
+
+    /* Animated qualifications list */
+    .qualifications-container {
+      position: relative;
+      height: 150px;
+      margin: 1rem 0;
+      overflow: hidden;
+    }
+
+    .qualifications-list {
+      position: relative;
+      height: 100%;
+    }
+
+    .qualification-item {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 2px;
+      transform: translateY(-50px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+    }
+
+    /* Individual item animations */
+    .qualification-item:nth-child(1) {
+      background: linear-gradient(135deg, #6e48aa, #9d50bb);
+      color: white;
+      animation: dropIn 15s infinite;
+    }
+
+    .qualification-item:nth-child(2) {
+      background: linear-gradient(135deg, #00b09b, #96c93d);
+      color: white;
+      animation: dropIn 15s infinite 3s;
+    }
+
+    .qualification-item:nth-child(3) {
+      background: linear-gradient(135deg, #ff6b6b, #ff9a3d);
+      color: white;
+      animation: dropIn 15s infinite 6s;
+    }
+
+    .qualification-item:nth-child(4) {
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: white;
+      animation: dropIn 15s infinite 9s;
+    }
+
+    .qualification-item:nth-child(5) {
+      background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+      color: white;
+      animation: dropIn 15s infinite 12s;
+    }
+
+    @keyframes dropIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      5% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      15% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      20% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      25% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+    }
+
+    .closing-text {
+      font-size: 1rem;
+      color: #b0b0b0;
+      margin-top: 0.2rem;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Button group styles */
+    .button-group {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #6e48aa, #9d50bb);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      box-shadow: 0 5px 15px rgba(110, 72, 170, 0.3);
+    }
+
+    .cta-button-secondary {
+      background: linear-gradient(135deg, #00b09b, #96c93d);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(110, 72, 170, 0.4);
+    }
+
+    /* Responsive design */
+    @media (max-width: 900px) {
+      .hero-section {
+        flex-direction: column;
+      }
+
+      .image-content {
+        margin-top: 2rem;
+        max-height: 400px;
+      }
+
+      .main-heading {
+        font-size: 2.8rem;
+      }
+
+      .qualification-item {
+        font-size: 1.5rem;
+      }
+
+      .qualifications-container {
+        height: 280px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      nav {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+      }
+
+      .main-heading {
+        font-size: 2.2rem;
+      }
+
+      .closing-text {
+        font-size: 1.2rem;
+      }
+
+      .hero-section {
+        padding: 20px;
+      }
+
+      .qualification-item {
+        font-size: 1.3rem;
+      }
+
+      .qualifications-container {
+        height: 240px;
+      }
+
+      .button-group {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      .image-content {
+        max-height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="wordpress.html">My Blog</a>
+      <a href="cvyangu.html">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero-section">
+      <div class="text-content">
+        <h2 class="main-heading">I'm <span>Mash Martin</span></h2>
+
+        <div class="qualifications-container">
+          <div class="qualifications-list">
+            <div class="qualification-item">A Digital Creator</div>
+            <div class="qualification-item">A Digital Media Strategist</div>
+            <div class="qualification-item">A Social Media Manager</div>
+            <div class="qualification-item">A Backend Developer</div>
+            <div class="qualification-item">A Physicist</div>
+          </div>
+        </div>
+
+        <p class="closing-text">...who loves exploring the intersection of technology and creativity.</p>
+
+        <div class="button-group">
+          <a href="#hire" class="cta-button">Hire Me</a>
+          <a href="#works" class="cta-button cta-button-secondary">My Works</a>
+        </div>
+      </div> <!-- This closing div was missing -->
+
+      <div class="image-content">
+        <img src="images/mash.jpg" alt="Mash Martin" class="profile-image">
+      </div>
+    </div>
+  </main>
+</body>
+</html>
